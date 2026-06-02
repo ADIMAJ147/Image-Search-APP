@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "MarkItDown",
+    "slug": "markitdown-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#1a1a2e"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1a1a2e"
+      },
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.CAMERA",
+        "android.permission.READ_MEDIA_IMAGES"
+      ],
+      "package": "com.yourname.markitdown"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow MarkItDown to access your photos for conversion.",
+          "cameraPermission": "Allow MarkItDown to use the camera to capture documents."
+        }
+      ]
+    ]
+  }
+}
